@@ -1,0 +1,28 @@
+<view class='b1 float color'>
+    <view class='head' wx:if="{{logged}}" style="background-image: url({{userImage}})"></view>
+    <text class='name'  wx:if="{{logged}}">[{{username}}]</text>
+</view>
+  <view class='b2 float color text' catchtap='to_report_card0'>
+   <image src="../../images/人物-账号管理.png" class="image" mode="aspectFill" open-type="redirect"></image>
+   <text>账号管理</text>
+   <image src="../../images/右箭头.png" class="image2" mode="aspectFill"></image>
+</view>
+
+<view class='b2 float color text' catchtap='to_report_card1'>
+  <image src="" class="image"></image>
+  <text>成绩管理</text>
+  <image src="../../images/右箭头.png" class="image2" mode="aspectFill"></image>
+</view>
+
+   <view class='b2 float color text' catchtap="to_report_card2">
+      <image src="" class="image"></image>
+      <text>帮助信息</text>
+      <image src="../../images/右箭头.png" class="image2" mode="aspectFill"></image>
+   </view>
+
+
+   <view class='b2 float color text' catchtap="to_report_card3">
+      <image src="../../images/版本管理.png" class="image"></image>
+      <text>版本管理</text>
+      <image src="../../images/右箭头.png" class="image2" mode="aspectFill"></image>
+   </view>

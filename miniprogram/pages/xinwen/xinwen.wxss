@@ -1,0 +1,81 @@
+/* pages/xinwen/xinwen.wxss */
+.news{
+  width:750rpx;
+}
+.tit{
+  display:flex;
+}
+.icon-news{
+  font-size: 90rpx;
+  color: brown;
+}
+.tit text{
+ line-height: 100rpx;
+ font-size: 40rpx;
+ font-weight:800;
+}
+/* 新闻资讯 */
+.segment{
+ width:100%;
+ height:100rpx;
+ border:1rpx solid #ccc;
+ display:flex;
+ box-shadow: 2rpx  2rpx 10rpx#ccc;
+ border-radius: 10rpx;
+}
+.segmentItem{
+ flex: 1;
+ border-left: 1rpx solid rgb(207, 201, 201);
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
+.active  .title{
+  line-height:100rpx;
+  width: 100%;
+  text-align: center;
+  background-color:rgb(193,210,240,0.1);
+  font-weight: 700;
+}
+.lanmu{
+ height: 200rpx;
+ display:flex;
+ border: 1rpx solid #ccc;
+ overflow: hidden;
+ box-shadow: 2rpx 2rpx 20rpx #eee;
+ margin: 15rpx;
+ border-radius:10rpx;
+}
+.lanmu .left{
+ width: 60%;
+ display: flex;
+}
+.lanmu .right{
+ flex:1;
+ padding: 20rpx;
+}
+.lanmu .right image{
+ height:100%;
+ width: 100%;
+}
+.lanmu .left .wenben{
+ padding:10rpx;
+ box-sizing:border-box;
+ width: 100%;
+ height:100%;
+ display:flex;
+ flex-direction: column;
+}
+.lanmu .left .wenben .targe{
+ margin: 10rpx;
+ margin-right:0rpx;
+ font-size: 35rpx;
+}
+.lanmu .left .wenben .day{
+ font-size: 25rpx;
+ color:#ccc;
+ line-height: 80rpx;
+ display:flex;
+ justify-content: flex-end;
+
+}

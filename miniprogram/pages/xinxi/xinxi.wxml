@@ -1,0 +1,40 @@
+<!--miniprogram/pages/xinxi/xinxi.wxml-->
+<view class="contanor">
+  <view class="title"> 学籍信息</view>
+  <view class="context">
+    <text class="left">姓名</text>
+    <text class="right">刘润超</text>
+  </view>
+  <view class="context">
+    <text class="left">性别</text>
+    <text class="right">男</text>
+  </view>
+  <view class="context">
+    <text class="left">民族</text>
+    <text class="right">汉族</text>
+  </view>
+  <view class="context">
+    <text class="left">政治面貌</text>
+    <text class="right">共青团员</text>
+  </view>
+  <view class="context">
+    <text class="left">学校</text>
+    <text class="right">中北大学</text>
+  </view>
+  <view class="context">
+    <text class="left">学院</text>
+    <text class="right">信息与通讯工程学院</text>
+  </view>
+  <view class="context">
+    <text class="left">班级</text>
+    <text class="right">17050142</text>
+  </view>
+  <view class="context">
+    <text class="left">学号</text>
+    <text class="right">1705104134</text>
+  </view>
+  <view class="context">
+    <text class="left">入学时间</text>
+    <text class="right">2017-09-01</text>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+.title{
+  width: 750rpx;
+  height:90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-bottom:1rpx solid #ccc;
+}
+.context{
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding:10rpx 30rpx;
+}
+.context .left{
+  font-weight: 500;
+  color: black;
+}
+.context .right{
+  color:rgb(121, 115, 115)
+}

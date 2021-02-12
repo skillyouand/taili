@@ -1,0 +1,86 @@
+<view class="containor">
+  <!-- 头部轮播器 -->
+	<swiper class="sliper" indicator-dots indicator-active-color="#000" 
+	indicator-color="rgba(128,128,128, .5)" autoplay interval="4000" circular>
+  <block wx:for="{{ImageSwiper}}" wx:key="index">
+		<swiper-item >
+			<image src="{{item}}" class="swiper-image" mode="scaleToFill"/>
+		</swiper-item>
+	</block>
+</swiper>
+<!-- 九宫格 -->
+  <view class="weui-grids">
+		<a class="weui-grid">
+      <navigator url="../xinxi/xinxi" class="tiaozhuan">
+        <view class="weui-grid__icon">
+				<image src="../../images/个人信息带圈.png" ></image>
+			  </view>
+			  <view class="weui-grid__label">学籍信息</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../chengji/chengji" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/成绩.png" ></image>
+			</view>
+      <view class="weui-grid__label">成绩查询</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../kebiao/kebiao" class="tiaozhuan">
+			<view class="weui-grid__icon" >
+				<image src="../../images/课表.png" ></image>
+			</view>
+      <view class="weui-grid__label">课表查询</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../kaoshi/kaoshi" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/考试.png" ></image>
+			</view>
+      <view class="weui-grid__label">考试安排</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../xinwen/xinwen" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/新闻.png" ></image>
+			</view>
+      <view class="weui-grid__label">校园热点</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../bisai/bisai" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/新闻.png" ></image>
+			</view>
+      <view class="weui-grid__label">比赛查询</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../tushuguan/tushuguan" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/新闻.png" ></image>
+			</view>
+      <view class="weui-grid__label">图书馆</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../ditu/ditu" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/地图.png" ></image>
+			</view>
+      <view class="weui-grid__label">校园地图</view>
+      </navigator>
+		</a>
+		<a class="weui-grid">
+      <navigator url="../jiaoshi/jiaoshi" class="tiaozhuan">
+			<view class="weui-grid__icon">
+				<image src="../../images/教室.png" ></image>
+			</view>
+      <view class="weui-grid__label">自习教室</view>
+      </navigator>
+		</a>
+	</view>
+</view>

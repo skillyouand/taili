@@ -1,0 +1,144 @@
+<view class="content">
+  <view class='title_right'>
+    <view class="tab-item " data-current="0" bindtap="swichNav">
+      <view class=" {{currentTab==0 ? 'onLeft' : ''}}">{{tab0}}</view>
+    </view>
+    <view class="tab-item " data-current="1" bindtap="swichNav">
+      <view class=" {{currentTab==1 ? 'onRight' : ''}}">{{tab1}}</view>
+    </view>
+  </view>
+  <swiper class="contanior">
+    <swiper-item catchtouchmove="stopTouchMove"  wx:if='{{currentTab == 0}}'>
+      <view class='title'>
+        <view class='title_left title_top'>
+          <view class="day {{dayTab==0 ? 'day_' : ''}}" data-dayTab="0" bindtap="dayCheck">今日</view>
+          <view class="day {{dayTab==1 ? 'day_' : ''}}" data-dayTab="1" bindtap="dayCheck">明日</view>
+          <view class="day {{dayTab==2 ? 'day_' : ''}}" data-dayTab="2" bindtap="dayCheck">后日</view>
+        </view>
+      </view>
+      <view>
+        <swiper class='dayClass' current="{{dayTab}}" bindchange="swiperChange">
+          <swiper-item catchtouchmove="stopTouchMove">
+            <view class="all">
+              <scroll-view scroll-y="true" class="scrolled">
+                <view class='day_content' wx:for='{{daylist}}' wx:key='index'>
+                  <view class="day_line">
+                    <view class="{{item.type=='1'?'day_type':'day_type1'}}">{{item.type == '1'?'课':'辅'}}</view>
+                  </view>
+                  <view class="{{item.type=='1'?'day_wrap':'day_wrap1'}}">
+                    <view>{{item.jcxx}}</view>
+                    <view class='day_card'>
+                      <view class='day_className'>{{item.kcm}}</view>
+                      <view class='day_course'>
+                        <view>授课教师：{{item.skls}}</view>
+                        <view>上课教室：{{item.jsbh}}</view>
+                        <view>开课院系：{{item.kkyx}}</view>
+                        <view>学生人数：{{item.xsrs}}人</view>
+                        <view>上课班级：{{item.skbj}}</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </scroll-view>
+            </view>
+          </swiper-item>
+          <swiper-item catchtouchmove="stopTouchMove">
+            <view class="all">
+              <scroll-view scroll-y="true" class="scrolled">
+                <view class='day_content' wx:for='{{daylist}}' wx:key='index'>
+                  <view class="day_line">
+                    <view class="{{item.type=='1'?'day_type':'day_type1'}}">{{item.type == '1'?'课':'辅'}}</view>
+                  </view>
+                  <view class="{{item.type=='1'?'day_wrap':'day_wrap1'}}">
+                    <view>{{item.jcxx}}</view>
+                    <view class='day_card'>
+                      <view class='day_className'>{{item.kcm}}</view>
+                      <view class='day_course'>
+                        <view>授课教师：{{item.skls}}</view>
+                        <view>上课教室：{{item.jsbh}}</view>
+                        <view>开课院系：{{item.kkyx}}</view>
+                        <view>学生人数：{{item.xsrs}}人</view>
+                        <view>上课班级：{{item.skbj}}</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </scroll-view>
+            </view>
+          </swiper-item>
+          <swiper-item catchtouchmove="stopTouchMove">
+            <view class="all">
+              <scroll-view scroll-y="true" class="scrolled">
+                <view class='day_content' wx:for='{{daylist}}' wx:key='index'>
+                  <view class="day_line">
+                    <view class="{{item.type=='1'?'day_type':'day_type1'}}">{{item.type == '1'?'课':'辅'}}</view>
+                  </view>
+                  <view class="{{item.type=='1'?'day_wrap':'day_wrap1'}}">
+                    <view>{{item.jcxx}}</view>
+                    <view class='day_card'>
+                      <view class='day_className'>{{item.kcm}}</view>
+                      <view class='day_course'>
+                        <view>授课教师：{{item.skls}}</view>
+                        <view>上课教室：{{item.jsbh}}</view>
+                        <view>开课院系：{{item.kkyx}}</view>
+                        <view>学生人数：{{item.xsrs}}人</view>
+                        <view>上课班级：{{item.skbj}}</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </scroll-view>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove" wx:if='{{currentTab == 1}}'>
+      <view class='title' bindtap='clickHide'>
+        <view class='title_left'>
+          <view class='btn btn_'></view>
+          <view class='week' catchtap='clickShow'>
+            第7周
+            <image></image>
+          </view>
+          <view class='btn'></view>
+        </view>
+      </view>
+      <scroll-view scroll-x="true" class='show' wx:if='{{show}}'>
+        <view class='show_week' wx:for="{{weekList}}" wx:key="index">{{item}}</view>
+      </scroll-view>
+      <view>
+        <view class="top">
+          <view class='left'>{{month}}月</view>
+          <view wx:for="{{['一','二','三','四','五','六','日']}}" wx:key="index" class="top-text {{dayOfWeek ==(index+1) ?'top-text-strong':''}}">
+            周{{item}}
+            <view class="day {{dayOfWeek ==(index+1) ?'day-text-strong':''}}">{{dayList[index]}}日</view>
+          </view>
+        </view>
+        <scroll-view scroll-y="true" class="scroll" style='height:100vh;' bindtap='clickHide'>
+          <view style="width:100%;display:flex; height:110%;">
+            <view style="background-color:rgba(50,50,50,0.1);color:#000;">
+              <view  wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}" wx:key="index" class="left">
+                <view class="jie">{{item}}</view>
+                <view class="jie-time">{{courseTime[index]}}</view>
+              </view>
+            </view>
+            <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}" wx:key="unique">
+			<view class="{{index==3||index==7?'text-red':'text-gray'}};" style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid">
+			</view>
+		        </view>
+            <!--课表-->
+            <view wx:for="{{wlist}}" wx:key="index">
+              <view class="flex-item kcb-item" bindtap="showCardView" data-wlist='{{item}}' data-index='{{index}}' style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+1}}rpx;height:{{item.skcd*99}}rpx;background-color:{{item.color == '0'?'#FCB8AF':(item.color == '1'?'#81D2FC':'#F8C77A')}}">
+                <view class="smalltext" style='-webkit-line-clamp: {{item.skcd == "3"?"4":(item.skcd == "4"?"6":"2")}};'>{{item.kcm}}</view>
+                <view class='classRoom'>({{item.jsbh == ''?'--':item.jsbh}})</view>
+                <view class='logo' style="background-color:{{item.color == '0'?'#FA7666':(item.color == '1'?'#3CB9FB':'#F39C13')}}">{{item.color == '0'?'必':(item.color == '1'?'选':'其')}}</view>
+                <!-- xqj代表星期几上课，sksj是上课时间，skcd上课长度，kcm课程名，jsbh教室编号 color选修必修-->
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

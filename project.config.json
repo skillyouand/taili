@@ -1,0 +1,99 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wx77b2954f899c90de",
+  "projectname": "%E4%BA%91%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83",
+  "libVersion": "2.14.1",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "新闻",
+          "pathName": "pages/xinwen/xinwen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人设置",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/my/denglu/denglu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "学籍信息",
+          "pathName": "pages/xinxi/xinxi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "成绩",
+          "pathName": "pages/chengji/chengji",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "课表",
+          "pathName": "pages/kebiao/kebiao",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

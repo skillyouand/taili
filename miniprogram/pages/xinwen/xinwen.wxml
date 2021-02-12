@@ -1,0 +1,25 @@
+<!-- 新闻资讯 -->
+<view class="news">
+  <view class="tit">
+    <icon class="iconfont icon-news"/>
+  <text>新闻资讯</text>
+</view>
+<view class="segment">
+  <block wx:for="{{2}}" wx:key="index" >
+    <view id="{{index}}" class="segmentItem {{currentIndex == index?'active':''}}"  bindtap="_handleTap">
+    <text class="title">{{segmentItem[index].title}}</text>
+  </view>
+  </block>
+</view>
+<view class="lanmu" wx:for="{{5}}" wx:key="index">
+<view class="left">
+  <navigator class="wenben" url="">
+    <text class="targe">这是一条非常有内涵的一篇文章</text>
+    <text class="day">2020-10-1</text>
+  </navigator>
+</view>
+<view class="right">
+  <image src="../../images/未登录头象.png"/>
+</view>
+</view>
+</view>

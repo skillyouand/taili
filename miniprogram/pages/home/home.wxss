@@ -1,0 +1,45 @@
+.containor{
+  width: 750rpx;
+}
+.sliper{
+  margin: 20rpx;
+  border: 1rpx solid #ccc;
+  overflow: hidden;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  height: 340rpx;
+}
+.sliper image{
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.weui-grids{
+  display:flex;
+  background-color:#fff;
+  flex-wrap: wrap;
+  border:1rpx solid #eee;
+  box-sizing: border-box;
+}
+.weui-grids  .weui-grid{
+  display:flex;
+  flex-direction: column;
+  width: 33.3%;
+  height: 250rpx;
+  justify-content: center;
+  align-items: center;
+  border-right: 1rpx solid #eee;
+  border-top:1rpx solid #eee;
+  box-sizing: border-box;
+}
+.weui-grids  .weui-grid .tiaozhuan{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weui-grids  .weui-grid .tiaozhuan image{
+  height:80rpx;
+  width: 80rpx;
+}

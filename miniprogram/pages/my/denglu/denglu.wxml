@@ -1,0 +1,43 @@
+<view class="backgrd" >
+  <image src="{{userImage}}" class="header"></image>
+  <view class="name">WELCOME!{{userName}}</view>
+  <view class="loginPane">
+    <form bindsubmit="_handlersubmit">
+      <view class="formItem schoolItem">
+        <text class="University">University：</text>
+        <view class="school">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picke" name="school"  value="{{value}}">
+              <view class="select">
+                <text class="pick">{{array[value]}}</text>
+               <text class="iconfont icon-youjiantou-"></text>
+              </view>
+             </picker>
+        </view>
+      </view>
+
+    <view class="formItem  accountItem">
+      <text class="Username">Username：</text>
+      <input  class="account" placeholder="请输入学号" name="accountV" bindinput="_handleAccountInput"
+      type ="number" maxlength="11"></input>
+      <text></text>
+    </view>
+    <view class="formItem passwordItem">
+      <text class="Password">Password：</text>
+      <input  class="password" password="true" placeholder="请输入密码" name="passwordV " bindinput="_handlePasswordInput" password></input>
+    </view>
+    <view class="formItem agree">
+      <checkbox-group name="agree" class="agreed">
+        <checkbox value="1" checked="{{agree}}"></checkbox>
+        <label>
+								已阅读并同意
+								<text class="text-blue" bindtap="openUserAgreement"
+									catchtouchmove="preventTouchMove">《用户协议》</text>
+			  </label>
+      </checkbox-group>
+    </view>
+    <view class="formItem">
+      <button type="primary" class="loginButton" form-type="submit" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo" >  登  录</button>
+    </view>
+  </form>
+  </view>
+</view>
